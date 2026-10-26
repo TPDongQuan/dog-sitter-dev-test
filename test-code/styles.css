@@ -87,3 +87,43 @@ h1,h2,h3,p{
     outline: 3px solid #fff;
     outline-offset: 3px;
 }
+
+@media (min-width: 726px) {
+    .hero{
+        min-height: 600px;
+        padding: 178px 60px 100px;
+        background:
+            linear-gradient(270deg, rgba(255,255,255,5e-05) 0%, rgba(0,0,0,0.55) 65%),
+            url("assets/main-banner.png") center / cover no-repeat;
+    }
+    .hero_content{
+        max-width: 416px;
+    }
+    .hero h1{
+        font-size: 45px;
+    }
+    .hero p{
+        font-size: 18px; 
+        line-height: normal;
+    }
+}
+
+@media (min-width: 900px){
+    .hero{
+        padding-left: 100px; 
+        padding-right: 100px;
+    }
+    .hero_content{
+        max-width: 525px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero{
+        padding-left: 220px; 
+        padding-right: 220px;
+    }
+    .hero_content{
+        max-width: 590px;
+    }
+}
