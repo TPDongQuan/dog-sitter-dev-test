@@ -233,3 +233,55 @@ h1,h2,h3,p{
     outline-offset: 3px;
 }
 
+@media (min-width: 726px){
+    .services h2{
+        font-size: 36px;
+    }
+    .services_intro{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .cards{
+        max-width: 816px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(0, 1fr);
+        height: 300px
+    }
+    .card img{
+        height: 100%;
+        min-height: 0;
+    }
+    .card_body{
+        justify-content: center;
+        min-height: 0;
+    }
+    .card h3{
+        font-family: var(--font-heading);
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .cards{
+        max-width: none;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .card{
+        display: block;
+        height: auto;
+    }
+    .card img{
+        height: 266px;
+    }
+    .card_body{
+        padding: 36px 24px;
+    }
+}
