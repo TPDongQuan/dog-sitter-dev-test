@@ -124,6 +124,17 @@ h1,h2,h3,p{
         padding-right: 220px;
     }
     .hero_content{
-        max-width: 590px;
+        max-width: 588px;
     }
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 62px;
+    background: url("assets/banner-wave.svg") center bottom / 1800px 62px no-repeat;
+    pointer-events: none;
 }
